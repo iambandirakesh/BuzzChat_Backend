@@ -54,7 +54,7 @@ export const sendWelcomeEmail = async (recipient, name) => {
 
 export const sendPasswordResetEmail = async (recipient, resetToken) => {
   try {
-    const resetURL = `http://localhost:3000/forgot-password/${resetToken}`;
+    const resetURL = `https://buzzchat-frontend-9m6r.onrender.com/forgot-password/${resetToken}`;
     const response = await transporter.sendMail({
       from: sender,
       to: recipient,
